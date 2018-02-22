@@ -3,6 +3,7 @@
 	justify-content: space-between;
 }
 
-.header {
+h1,
+input {
 	display: inline-block;
 }
