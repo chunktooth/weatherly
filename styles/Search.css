@@ -1,6 +1,8 @@
 .search-bar {
-	width: 50%;
-	text-align: right;
+  width: 100%;
+  /*margin-top: 11px;*/
+  display: flex;
+  justify-content: flex-end;
 }
 
 input, button {

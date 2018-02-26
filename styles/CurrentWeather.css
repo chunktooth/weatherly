@@ -7,13 +7,13 @@
 
 .info-row {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .high, 
 .low {
 	display: inline-block;
-	margin: 0 60px 0 20px;
+	margin: 0 40px 0 20px;
 	font-size: 30px;
 }
 
