@@ -1,0 +1,25 @@
+.search-bar {
+	width: 50%;
+	text-align: right;
+}
+
+input, button {
+	display: inline-block;
+}
+
+button {
+	background-color: hsla(0, 0%, 1%, 0.7);
+	font-size: 16px;
+	color: white;
+	padding: 4px;
+}
+
+.home-search {
+	width: 89%;	
+	font-size: 15px;
+}
+
+.header-search {
+	width: 50%;
+	font-size: 15px;
+}
