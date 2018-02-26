@@ -1,5 +1,11 @@
-h2,
-h3,
-img {
-  display: inline-block;
+.Ten-day {
+	background-color: hsla(0, 60%, 0%, .4);
+	font-family: 'Averia Gruesa Libre', cursive;
+	margin-top: 10px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;	
 }

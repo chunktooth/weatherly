@@ -1,4 +1,6 @@
-.seven-hour,
-.ten-day {
-  display: inline-block;
+.Card {
+	margin: auto;
+	padding: 13px;
+	color: white;
+	/*display: inline-block;*/
 }

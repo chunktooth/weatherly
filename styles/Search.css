@@ -1,0 +1,27 @@
+.search-bar {
+  width: 100%;
+  /*margin-top: 11px;*/
+  display: flex;
+  justify-content: flex-end;
+}
+
+input, button {
+	display: inline-block;
+}
+
+button {
+	background-color: hsla(0, 0%, 1%, 0.7);
+	font-size: 16px;
+	color: white;
+	padding: 4px;
+}
+
+.home-search {
+	width: 89%;	
+	font-size: 15px;
+}
+
+.header-search {
+	width: 50%;
+	font-size: 15px;
+}

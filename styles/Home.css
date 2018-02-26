@@ -1,0 +1,11 @@
+.Home {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 29px;
+	color: white;
+	margin: 300px auto;
+}
+
+h1, 
+p {
+	margin: 0;
+}

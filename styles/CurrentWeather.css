@@ -1,0 +1,42 @@
+.Current {
+	background-color: hsla(0, 60%, 0%, .4);
+	color: white;
+	margin: auto;
+	padding: 13px;
+}
+
+.info-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.high, 
+.low {
+	display: inline-block;
+	margin: 0 40px 0 20px;
+	font-size: 30px;
+}
+
+.high {
+	color: #FF5733;
+}
+
+.low {
+	color: #33A5FF;
+}
+
+.temp {
+	display: inline-block;
+	margin: 0 20px;
+	font-size: 100px;
+}
+
+.condition {
+	display: inline-block;
+	font-family: 'Permanent Marker', cursive;
+	color: #C9C9C9;
+}
+
+.summary {
+	margin: 13px 20px;
+}

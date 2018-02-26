@@ -1,0 +1,34 @@
+.App {
+	display: flex;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+body {
+	background-image: url(./images/solar.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Averia Gruesa Libre', cursive;
+}
+
+h1 {
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.Current-weather {
+	box-sizing: border;
+	margin: auto;
+}
+
+.stats {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}

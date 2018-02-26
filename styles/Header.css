@@ -1,9 +1,12 @@
-.container {
+.Header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	font-family: 'Permanent Marker', cursive;
+	margin-bottom: 10px;
 }
 
-h1,
-input {
-	display: inline-block;
+.current-location {
+	color: white;
+	margin-bottom: 5px;
+	width: 30%;
 }
