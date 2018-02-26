@@ -1,6 +1,5 @@
 .search-bar {
   width: 100%;
-  /*margin-top: 11px;*/
   display: flex;
   justify-content: flex-end;
 }

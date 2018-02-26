@@ -5,9 +5,21 @@
 	padding: 13px;
 }
 
-.today {
+.time-temp {
+	display: flex;
+	justify-content: space-between;
+}
+
+.today-time {
 	display: flex;
 	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: 20px;
+}
+
+.time {
+	font-size: 50px;
 }
 
 .high, 
@@ -33,7 +45,6 @@
 
 .condition {
 	display: inline-block;
-	font-family: 'Permanent Marker', cursive;
 	color: #C9C9C9;
 }
 

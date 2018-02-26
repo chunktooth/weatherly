@@ -9,6 +9,10 @@
 	margin: auto;
 }
 
+html {
+	height: 100vh;
+}
+
 body {
 	background-image: url(./images/solar.jpg);
 	background-size: cover;
@@ -29,6 +33,6 @@ h1 {
 .stats {
 	display: flex;
 	justify-content: center;
-	width: 100%;
 	margin: auto;
+	width: 100%;
 }
