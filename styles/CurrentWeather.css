@@ -5,9 +5,9 @@
 	padding: 13px;
 }
 
-.info-row {
+.today {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 
 .high, 
