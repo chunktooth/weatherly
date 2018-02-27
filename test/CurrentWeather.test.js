@@ -1,23 +1,28 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import CurrentWeather from '../lib/CurrentWeather';
-import { currentWeatherCleaner } from '../lib/Data';
-import data from '../lib/Mockdata';
+import { currentWeatherCleaner, currentDate } from '../lib/Data';
+import data from '../__mocks__/Mockdata';
 
 describe('CurrentWeather', () => {
   let wrapper;
 
   beforeEach(() => {
     localStorage.clear();
-    wrapper = mount(<CurrentWeather forecast={currentWeatherCleaner(data)} />);
+    wrapper = mount(<CurrentWeather forecast={currentWeatherCleaner(data)}
+                                    date={currentDate(data)}/>);
   });
 
   it('should exist', () => {
     expect(wrapper).toBeDefined();
   });
 
-  it('should pass the correct number of props', () => {
+  it('should pass the correct number of forecast props', () => {
     expect(Object.keys(wrapper.props().forecast).length).toEqual(5);
+  });
+
+  it('should pass the correct number of date props', () => {
+    expect(Object.keys(wrapper.props().date).length).toEqual(2);
   });
 
   it('should render the prop temp', () => {
@@ -38,5 +43,13 @@ describe('CurrentWeather', () => {
 
   it('should render the prop summary', () => {
     expect(wrapper.props().forecast.summary).toEqual('Sun and clouds mixed. High 51F. Winds NE at 10 to 15 mph.');
+  });
+
+  it('should render the prop today', () => {
+    expect(wrapper.props().date.today).toEqual('Wed, 20 Dec 2017');
+  });
+
+  it('should render the prop time', () => {
+    expect(wrapper.props().date.time).toEqual(' 11:27:19 ');
   });
 });
