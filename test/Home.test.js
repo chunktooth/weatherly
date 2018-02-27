@@ -8,7 +8,7 @@ describe('Home', () => {
   beforeEach(() => {
     localStorage.clear();
     wrapper = shallow(<Home updateWeather={() => {}}
-                            error={ {error: false} } />);
+                            error={false} />);
   });
 
   it('should exist', () => {
@@ -22,7 +22,7 @@ describe('Home', () => {
 
   it('should have an error prop', () => {
     expect(wrapper.instance().props.error).toBeDefined();
-    expect(typeof wrapper.instance().props.error).toEqual('object');
+    expect(typeof wrapper.instance().props.error).toEqual('boolean');
   });
 
   it('should render an h1 element', () => {

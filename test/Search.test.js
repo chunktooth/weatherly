@@ -36,7 +36,7 @@ describe('Search', () => {
   });
 
   it('should render an error message if an invalid location has been submitted', () => {
-    const wrapper = shallow(<Search error={ {error: true} } />);
+    const wrapper = shallow(<Search error={true} />);
 
     expect(wrapper.find('.error-text').length).toEqual(1)
   });

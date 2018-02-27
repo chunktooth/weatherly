@@ -50,6 +50,6 @@ describe('CurrentWeather', () => {
   });
 
   it('should render the prop time', () => {
-    expect(wrapper.props().date.time).toEqual(' 11:27:19 ');
+    expect(wrapper.props().date.time).toEqual(' 11:27');
   });
 });
