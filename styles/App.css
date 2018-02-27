@@ -2,6 +2,7 @@
 	display: flex;
   box-sizing: border-box;
   margin: auto;
+  height: 100%;
 }
 
 .wrapper {
@@ -13,7 +14,7 @@ body {
 	background-image: url(./images/solar.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'Roboto Mono', Monospace;
 }
 
 h1 {
@@ -26,9 +27,16 @@ h1 {
 	margin: auto;
 }
 
-.stats {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	margin: auto;
+@media screen and (max-width: 500px) {
+	.header-search {
+		font-size: 13px;
+	}
 }
+
+@media screen and (max-width: 320px) {
+	.current-location, 
+	.header-search {
+		display: flex;
+		flex-direction: column;
+	}
+}	

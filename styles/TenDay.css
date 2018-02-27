@@ -1,11 +1,19 @@
 .Ten-day {
 	background-color: hsla(0, 60%, 0%, .4);
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'Roboto Mono', Monospace;
 	margin-top: 10px;
 }
 
-.row {
+.day-rows {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;	
+	flex-direction: row;
+	justify-content: space-between
+}
+
+@media screen and (max-width: 850px) {
+	.day-rows {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }

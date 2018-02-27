@@ -1,12 +1,19 @@
 .Seven-hour {
 	background-color: hsla(0, 60%, 0%, .4);
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'Roboto Mono', Monospace;
 	margin-top: 10px;
-	padding: 0;
+	margin: auto;
 }
 
-.row {
+.hour-rows {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
-	width: 100%;	
+}
+
+@media screen and (max-width: 470px) {
+	.hour-rows {
+		display: flex;
+		flex-direction: column;
+	}
 }

@@ -1,12 +1,31 @@
 .Header {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	font-family: 'Permanent Marker', cursive;
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 .current-location {
 	color: white;
 	margin-bottom: 5px;
-	width: 30%;
+	width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+	.current-location {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 549px) {
+	.current-location {
+		font-size: 25px;
+		width: 100%;
+	}
+	
+	.Header {
+		display: block;
+		width: 100%;
+	}
 }
