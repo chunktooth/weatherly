@@ -18,7 +18,7 @@ describe('App', () => {
 		expect(wrapper.state()).toEqual(
 		{
 			currentLocation: '',
-      currentDate: '',
+      currentDate: {},
       currentWeather: {},
       sevenHour: [],
       tenDay: [],
