@@ -1,31 +1,10 @@
-# React Starter Kit
+## Weathrly
+##### By: Aldo Mercado and Om Saetehn
 
-To install the dependencies:
+### About
+A weather forecast app for desktop and mobile view, made in React.js framwork and is responsive at maximum 320px breakpoint for viewing on iPhone5 and larger screens. API fetched from Wunderground. The background is the Solar project near Tonopah, Nye County in Neveda. 
 
-```
-npm install
-```
-
-To fire up a development server:
-
-```
-npm start
-```
-
-Once the server is running, you can visit:
-
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
-
-To build the static files:
-
-```js
-npm run build
-```
-
-
-To run tests in Node:
-
-```js
-npm test
-```
+### Our Weather Homepage
+![HOMEPAGE](https://github.com/chunktooth/weatherly/blob/master/our-weathrly-homepage.png)
+![MAIN APP](https://github.com/chunktooth/weatherly/blob/master/our-weathrly.png)
+![RESPONSIVENESS](https://github.com/chunktooth/weatherly/blob/master/our-weathrly%20mobile.png)
