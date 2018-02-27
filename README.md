@@ -2,7 +2,7 @@
 ##### By: Aldo Mercado and Om Saetehn
 
 ### About
-A weather forecast app for desktop and mobile view, made in React.js framwork and is responsive at maximum 320px breakpoint for viewing on iPhone5 and larger screens. API fetched from Wunderground. The background is the Solar project near Tonopah, Nye County in Neveda. 
+A weather forecast app for desktop and mobile view, made in React.js framework and is responsive at maximum 320px breakpoint for viewing on iPhone5 and larger screens. API fetched from Wunderground. The background is the Solar project near Tonopah, Nye County in Neveda. 
 
 ### Our Weather Homepage
 ![HOMEPAGE](https://github.com/chunktooth/weatherly/blob/master/our-weathrly-homepage.png)
