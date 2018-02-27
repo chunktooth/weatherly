@@ -32,7 +32,11 @@ describe('CurrentWeather', () => {
   });
 
   it('should render an h1 element for location', () => {
-     expect(wrapper.find('h1').length).toEqual(1);
+    expect(wrapper.find('h1').length).toEqual(1);
+  });
+
+  it('should render an h1 element with the correct location', () => {
+    expect(wrapper.find('h1').text().includes('Louisville, KY')).toEqual(true);
   });
 
   it('should render a Search component', () => {

@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App';
+import { currentLocation, currentDate, currentWeatherCleaner, 
+  sevenHourCleaner, tenDayCleaner } from '../lib/Data';
+import data from '../__mocks__/Mockdata';
+global.fetch = require('jest-fetch-mock');
 
 describe('App', () => {
   let wrapper;
@@ -38,10 +42,27 @@ describe('App', () => {
 	it('Should render the Header, CurrentWeather, SevenHour, and TenDay components when localStorage has a location', () => {
 		localStorage.setItem('location', 'Denver, CO')
 		
-		wrapper = shallow(<App />)
-		expect(wrapper.find('Header').length).toEqual(1);
+		wrapper = shallow(<App />);
+		
+    expect(wrapper.find('Header').length).toEqual(1);
 		expect(wrapper.find('CurrentWeather').length).toEqual(1);
 		expect(wrapper.find('SevenHour').length).toEqual(1);
 		expect(wrapper.find('TenDay').length).toEqual(1);
 	});
+  
+  it('should render an h1 element with class current-location', () => {
+    localStorage.setItem('location', 'Louisville, KY')
+   
+    wrapper = mount(<App />);
+
+    expect(wrapper.find('.current-location').length).toEqual(1)
+  });
+
+  it('should render an h1 element with class temp', () => {
+    localStorage.setItem('location', 'Louisville, KY')
+    
+    wrapper = mount(<App />);
+
+    expect(wrapper.find('.temp').length).toEqual(1)
+  });
 });
