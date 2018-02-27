@@ -2,15 +2,12 @@
 	display: flex;
   box-sizing: border-box;
   margin: auto;
+  height: 100vh;
 }
 
 .wrapper {
 	width: 90%;
 	margin: auto;
-}
-
-html {
-	height: 100vh;
 }
 
 body {
@@ -28,11 +25,4 @@ h1 {
 .Current-weather {
 	box-sizing: border;
 	margin: auto;
-}
-
-.stats {
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	width: 100%;
 }

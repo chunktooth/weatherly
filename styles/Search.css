@@ -1,5 +1,5 @@
 .search-bar {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
@@ -21,6 +21,20 @@ button {
 }
 
 .header-search {
-	width: 50%;
+	width: 100%;
 	font-size: 15px;
 }
+
+@media screen and (max-width: 600px) {
+	.header-search,
+	button {
+		font-size: 14px;
+	}
+}
+
+/*@media screen and (max-width: 490px) {
+	.header-search, 
+	button {
+		font-size: 15px;
+	}
+}*/
