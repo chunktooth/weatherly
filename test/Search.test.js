@@ -39,6 +39,7 @@ describe('Search', () => {
     const wrapper = shallow(<Search error={true} />);
 
     expect(wrapper.find('.error-text').length).toEqual(1)
+    expect(wrapper.find('p').text().includes('The location you entered is unavailable')).toEqual(true);
   });
 
   it('should call submitLocation when the button is clicked', () => {
