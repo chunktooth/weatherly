@@ -1,7 +1,8 @@
 .Seven-hour {
 	background-color: hsla(0, 60%, 0%, .4);
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'Roboto Mono', Monospace;
 	margin-top: 10px;
+	margin: auto;
 }
 
 .hour-rows {

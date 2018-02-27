@@ -18,8 +18,14 @@
 	}
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 549px) {
 	.current-location {
 		font-size: 25px;
+		width: 100%;
+	}
+	
+	.Header {
+		display: block;
+		width: 100%;
 	}
 }

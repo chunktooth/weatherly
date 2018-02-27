@@ -14,7 +14,7 @@ body {
 	background-image: url(./images/solar.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-family: 'Averia Gruesa Libre', cursive;
+	font-family: 'Roboto Mono', Monospace;
 }
 
 h1 {
@@ -26,3 +26,27 @@ h1 {
 	box-sizing: border;
 	margin: auto;
 }
+
+@media screen and (max-width: 900px) {
+	.App {
+		height: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.App {
+		height: 100%;
+	}
+	
+	.header-search {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.current-location, 
+	.header-search {
+		display: flex;
+		flex-direction: column;
+	}
+}	

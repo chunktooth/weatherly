@@ -9,3 +9,9 @@ h1,
 p {
 	margin: 0;
 }
+
+@media screen and (max-width: 691px) {
+	.Home h1 {
+		font-size: 100%;
+	}
+}
