@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Card from '../lib/Card';
 import { sevenHourCleaner, tenDayCleaner } from '../lib/Data';
-import data from '../lib/Mockdata';
+import data from '../__mocks__/Mockdata';
 
 describe('Card hour', () => {
   let wrapper;
@@ -52,10 +52,9 @@ describe('Card day', () => {
   });
 
   it('should pass the correct data to each day card', () => {
-    expect(wrapper.props().day[0].date).toEqual('Wednesday');
+    expect(wrapper.props().day[0].date).toEqual('Wed');
     expect(wrapper.props().day[0].img).toEqual('http://icons.wxug.com/i/c/k/partlycloudy.gif');
     expect(wrapper.props().day[0].high).toEqual('51');
     expect(wrapper.props().day[0].low).toEqual('32');
   });
-
 });

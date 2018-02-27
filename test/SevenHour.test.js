@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import SevenHour from '../lib/SevenHour';
 import { sevenHourCleaner } from '../lib/Data';
-import data from '../lib/Mockdata';
+import data from '../__mocks__/Mockdata';
 
 describe('SevenHour', () => {
   let wrapper;

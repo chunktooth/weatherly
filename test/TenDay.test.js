@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import TenDay from '../lib/TenDay';
 import { tenDayCleaner } from '../lib/Data';
-import data from '../lib/Mockdata';
+import data from '../__mocks__/Mockdata';
 
 describe('TenDay', () => {
   let wrapper;
@@ -25,7 +25,7 @@ describe('TenDay', () => {
   });
 
   it('should render the prop date', () => {
-    expect(wrapper.props().tenDayData[0].date).toEqual('Wednesday');
+    expect(wrapper.props().tenDayData[0].date).toEqual('Wed');
   });
 
   it('should render the prop img', () => {
