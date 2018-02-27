@@ -11,7 +11,7 @@ describe('CurrentWeather', () => {
     localStorage.clear();
     wrapper = mount(<Header location={currentLocation(data)}
                             updateWeather={() => {}}
-                            error={ {error: false} } />);
+                            error= {false}  />);
   });
 
   it('should exist', () => {
@@ -28,7 +28,7 @@ describe('CurrentWeather', () => {
   });
 
   it('should render a prop error', () => {
-    expect(wrapper.props().error).toEqual({"error": false});
+    expect(wrapper.props().error).toEqual(false);
   });
 
   it('should render an h1 element for location', () => {
