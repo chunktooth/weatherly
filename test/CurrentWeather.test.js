@@ -52,4 +52,17 @@ describe('CurrentWeather', () => {
   it('should render the prop time', () => {
     expect(wrapper.props().date.time).toEqual(' 11:27');
   });
+
+  it('should render an h1 element with the correct temperature', () => {
+    expect(wrapper.find('h1').first().text().includes('46')).toEqual(true);
+  });
+
+  it('should render a p element with the correct high temperature', () => {
+    expect(wrapper.find('p').first().text().includes('51')).toEqual(true);
+  });
+
+  it('should render h2 element with the complete summary', () => {
+    expect(wrapper.find('h2').first().text().includes('Sun and clouds mixed. High 51F. Winds NE at 10 to 15 mph.')).toEqual(true);
+  });
+
 });

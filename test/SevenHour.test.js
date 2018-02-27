@@ -35,4 +35,5 @@ describe('SevenHour', () => {
   it('should render the prop temp', () => {
     expect(wrapper.props().sevenHourData[0].temp).toEqual('47');
   });
+
 });
